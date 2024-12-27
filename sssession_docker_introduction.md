@@ -1,3 +1,5 @@
+![WhatsApp Image 2024-12-27 at 17 01 25_1a70d26a](https://github.com/user-attachments/assets/a22a44b9-9ee9-45a8-89ef-7955a7384713)
+
 docker
 1.what is an application
 2. application teck stack
