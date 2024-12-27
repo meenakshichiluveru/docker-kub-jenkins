@@ -1,4 +1,29 @@
 ![WhatsApp Image 2024-12-27 at 17 01 25_1a70d26a](https://github.com/user-attachments/assets/a22a44b9-9ee9-45a8-89ef-7955a7384713)
+The image depicts a Continuous Integration/Continuous Deployment (CI/CD) pipeline using Jenkins. Here’s an explanation of each component:
+
+Dev Team (1): The development team writes the code and pushes it to the Git Repository.
+
+Git Repo (3): This is a version control system where the code is stored. The changes made by the development team are committed and pushed here. Jenkins pulls the code from this repository.
+
+Jenkins (2): Jenkins is the CI/CD automation server orchestrating the entire pipeline. Its key responsibilities are:
+
+Pulling code from the Git repository.
+Building the application using tools like Maven.
+Running quality checks using tools like SonarQube.
+Storing build artifacts in repositories like Nexus.
+Building Docker images and pushing them to a Docker Registry.
+Deploying the application to Kubernetes for container orchestration.
+Maven (4): A build tool that compiles the code, runs unit tests, and packages the application into deployable formats like JAR or WAR.
+
+SonarQube (5): A code quality tool used to analyze the code for potential bugs, vulnerabilities, and maintainability issues.
+
+Nexus (6): A repository manager where build artifacts are stored. Jenkins uploads the compiled application (JAR/WAR files) here.
+
+Docker (7): Jenkins builds a Docker image of the application, which is a lightweight, standalone, and executable software package.
+
+Docker Registry (8): Once the Docker image is created, it is pushed to the Docker Registry, which serves as a central repository for storing and managing Docker images.
+
+Kubernetes (10): After the image is pushed to the registry, Jenkins triggers the deployment of the image to a Kubernetes cluster. Kubernetes manages the containerized application by scaling, load balancing, and ensuring high availability.
 
 docker
 1.what is an application
